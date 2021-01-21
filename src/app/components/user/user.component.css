@@ -1,0 +1,38 @@
+div{
+  background-color: #AEB7B3;
+  border-radius: 5px;
+}
+
+.number{
+  font-family: Century;
+  font-size: 20px;
+  font-weight: bold;
+  padding: 10px;
+  background-color: #E1EFE6;
+}
+
+.title{
+  font-family: Century;
+  font-size: 18px;
+  padding-left: 30px;
+}
+
+.btn{
+  /*animation-name: button;*/
+  /*animation-duration: 2s;*/
+  padding: 5px;
+  font-size: 14px;
+  margin-left: 10px;
+  border: 0px;
+  border-radius: 10px;
+  /*border-left: 3px solid green;*/
+}
+
+.btn:hover {
+  border-left: 20px solid green;
+  /*background-color: green;*/
+}
+
+
+
+
