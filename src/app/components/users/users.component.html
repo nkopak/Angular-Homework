@@ -1,0 +1,3 @@
+<app-user *ngFor="let item of posts" [post]="item" (bubbleUp)="getBubble($event)"></app-user>
+<app-user [post]="singlePost"></app-user>
+
