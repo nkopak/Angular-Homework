@@ -1,7 +1,7 @@
 import {HttpClient} from '@angular/common/http';
-import {Component, OnInit} from '@angular/core';
-import {Post} from '../../../models/Post';
-import {PostService} from '../../services/post.service';
+import {Component, OnInit, EventEmitter, Output} from '@angular/core';
+import {User} from '../../models/User';
+import {UserService} from '../../services/user.service';
 
 @Component({
   selector: 'app-users',
@@ -10,18 +10,18 @@ import {PostService} from '../../services/post.service';
 })
 export class UsersComponent implements OnInit {
 
-  posts: Post[];
-  singlePost: Post;
+  users: User[];
+  @Output()
+  bumble = new EventEmitter<number>();
 
-  constructor(private postService: PostService) {
+  constructor(private userService: UserService) {
   }
 
   ngOnInit(): void {
-  this.postService.getPosts().subscribe(value => this.posts = value);
+    this.userService.getUsers().subscribe(value => this.users = value);
   }
 
-  getBubble(post: Post): void {
-    this.singlePost = post;
+  getId(id: number): void {
+    this.bumble.emit(id);
   }
-
 }
