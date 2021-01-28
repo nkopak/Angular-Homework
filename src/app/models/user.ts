@@ -3,7 +3,8 @@ import {Address} from './address';
 export interface User {
   id: number;
   name: string;
-  username: string;
   email: string;
+  username: string;
+  phone: string;
   address: Address;
 }
