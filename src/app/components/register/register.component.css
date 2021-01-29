@@ -1,0 +1,10 @@
+.form{
+  border: 2px solid darkslategray;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 5px;
+}
+.input{
+  margin: 10px;
+}
