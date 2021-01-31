@@ -4,14 +4,16 @@ div{
 }
 
 .number{
+  margin: 0;
   font-family: Century;
-  font-size: 20px;
+  font-size: 18px;
   font-weight: bold;
   padding: 10px;
   background-color: #E1EFE6;
 }
 
 .title{
+  margin: 2px;
   font-family: Century;
   font-size: 18px;
   padding-left: 30px;
@@ -22,14 +24,15 @@ div{
   /*animation-duration: 2s;*/
   padding: 5px;
   font-size: 14px;
-  margin-left: 10px;
+  margin: 5px;
+  /*margin-left: 10px;*/
   border: 0px;
   border-radius: 10px;
   /*border-left: 3px solid green;*/
 }
 
 .btn:hover {
-  border-left: 20px solid green;
+  border-left: 10px solid green;
   /*background-color: green;*/
 }
 

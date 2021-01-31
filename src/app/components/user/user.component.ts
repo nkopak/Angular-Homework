@@ -8,9 +8,11 @@ import {Post} from '../../../models/Post';
   styleUrls: ['./user.component.css']
 })
 export class UserComponent implements OnInit {
-  @Input() post: Post;
+  @Input()
+  post: Post;
 
-  @Output() bubbleUp = new EventEmitter<Post>();
+  @Output()
+  bubbleUp = new EventEmitter<Post>();
   constructor() { }
 
   ngOnInit(): void {
