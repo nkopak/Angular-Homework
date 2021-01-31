@@ -1,0 +1,11 @@
+.header{
+  height: 80px;
+  background-color: cornflowerblue;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.btn{
+  height: 20px;
+  margin: 5px;
+}
