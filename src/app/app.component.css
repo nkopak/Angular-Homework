@@ -1,0 +1,41 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  background-color: #BFD7EA;
+}
+
+ul {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  margin-left: 20px;
+
+}
+
+li {
+  border-bottom: 5px solid rgba(11, 57, 84, 0);
+}
+
+li:hover {
+  border-bottom: 5px solid rgba(11, 57, 84, 1);
+}
+
+li:active {
+  border-bottom: 5px solid yellow;
+}
+
+a {
+  color: rgba(11, 57, 84, 1);
+  margin: 5px 0px;
+  padding: 10px 20px;
+  text-decoration: none;
+  font-size: 28px;
+}
+
+a:active {
+  color: yellow;
+}

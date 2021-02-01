@@ -1,0 +1,10 @@
+*{
+  box-sizing: border-box;
+}
+h3 {
+  border-left: 5px solid #0B3954;
+  background-color: #BFD7EA;
+  padding: 4px;
+  width: 300px;
+}
+

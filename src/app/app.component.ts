@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import {carsArr} from './data/cars';
+import {Car} from './model/car';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +8,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'Angular-Homework';
+  title: 'angular';
 }

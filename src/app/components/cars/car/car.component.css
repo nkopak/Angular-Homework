@@ -1,0 +1,42 @@
+* {
+  margin: 2px;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.target {
+  width: 300px;
+  background-color: #BFD7EA;
+  border: 3px solid #0B3954;
+  border-radius: 10px;
+}
+
+.container {
+  margin: 20px;
+}
+
+.link {
+  color: blue;
+  text-decoration: none;
+  border-left: 8px solid rgba(233, 235, 135, 0);
+  border-right: 8px solid rgba(233, 235, 135, 0);
+  padding: 0px 3px;
+}
+
+.link:hover {
+  color: blue;
+  border-left: 8px solid rgba(233, 235, 135, 1);
+  border-right: 8px solid rgba(233, 235, 135, 1);
+}
+
+.yes {
+  color: green;
+  font-weight: bolder;
+}
+
+.no {
+  color: red;
+  font-weight: bolder;
+}
+
+
