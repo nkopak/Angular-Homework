@@ -1,6 +1,4 @@
 import { Component } from '@angular/core';
-import {carsArr} from './data/cars';
-import {Car} from './model/car';
 
 @Component({
   selector: 'app-root',

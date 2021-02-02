@@ -2,24 +2,22 @@ import {NgModule} from '@angular/core';
 import {BrowserModule} from '@angular/platform-browser';
 
 import {AppComponent} from './app.component';
-import {CarComponent} from './components/cars/car/car.component';
-import {HomeComponent} from './components/home/home.component';
+import {HttpClientModule} from '@angular/common/http';
+import { UsersComponent } from './components/users/users.component';
 import {RouterModule} from '@angular/router';
-import { CarsComponent } from './components/cars/cars.component';
-import { FullCarComponent } from './components/cars/full-car/full-car.component';
+import {UserResolveService} from './services/resolve/user-resolve.service';
+import { UserComponent } from './components/users/user/user.component';
+
+const routes = [{
+  path: '', component: UsersComponent, resolve: {usersData: UserResolveService}
+}];
 
 @NgModule({
-  declarations: [AppComponent, CarComponent, HomeComponent, CarsComponent, FullCarComponent],
+  declarations: [AppComponent, UsersComponent, UserComponent],
   imports: [
     BrowserModule,
-    RouterModule.forRoot([{
-      path: 'link/home', component: HomeComponent
-    },
-      {
-        path: 'link/cars', component: CarsComponent, children: [{
-          path: ':id', component: FullCarComponent
-        }]
-      }])
+    HttpClientModule,
+    RouterModule.forRoot(routes)
   ],
   providers: [],
   bootstrap: [AppComponent]
