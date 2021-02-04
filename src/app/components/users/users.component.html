@@ -1,0 +1,5 @@
+<div *ngIf="users">
+  <app-user *ngFor="let user of users | custom" [user]="user"></app-user>
+</div>
+
+<!--<div>{{users | custom}}</div>-->
