@@ -8,19 +8,26 @@ import {RouterModule} from '@angular/router';
 import {UserResolveService} from './services/resolve/user-resolve.service';
 import {UserComponent} from './components/users/user/user.component';
 import {FullUserComponent} from './components/users/full-user/full-user.component';
+import { PostsComponent } from './components/users/full-user/posts/posts.component';
+import {PostResolveService} from './services/resolve/post-resolve.service';
+import { PostComponent } from './components/users/full-user/posts/post/post.component';
 
 const routes = [
   {
     path: 'users', component: UsersComponent, resolve: {usersData: UserResolveService},
     children: [
-      {path: ':id', component: FullUserComponent}
+      {path: ':id', component: FullUserComponent,
+        children: [
+          {path: 'posts', component: PostsComponent, resolve: {usersData: PostResolveService}}
+        ]}
     ]
   },
   {path: '', redirectTo: 'users', pathMatch: 'full'}
+
 ];
 
 @NgModule({
-  declarations: [AppComponent, UsersComponent, UserComponent, FullUserComponent],
+  declarations: [AppComponent, UsersComponent, UserComponent, FullUserComponent, PostsComponent, PostComponent],
   imports: [
     BrowserModule,
     HttpClientModule,
